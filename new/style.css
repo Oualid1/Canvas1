@@ -1,0 +1,598 @@
+@import '../../../../css/font-awesome-4.6.3/css/font-awesome.min.css';
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video
+{
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    border: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section
+{
+    display: block;
+}
+body
+{
+    line-height: 1;
+}
+ol,
+ul
+{
+    list-style: none;
+}
+blockquote,
+q
+{
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after
+{
+    content: '';
+    content: none;
+}
+
+table
+{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+body
+{
+  background-image: url(image/tech.jpg);
+    font-family: 'PT Sans', sans-serif;
+    min-height: 740px;
+    margin-top: 325px;
+    margin-left: 397px;
+    opacity: 1;
+    /*background: url('http://80.67.190.139/oualid%20simplon/image/future-technology-android-wallpaper.jpg');*/
+}
+img
+{
+    display: block;
+    float: left;
+    margin-top: -21px;
+}
+canvas
+{
+  display: block;
+  float: left;
+  position: absolute;
+  opacity: 1;
+}
+.back {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: #FFF;
+    font-size: 4em;
+    z-index: 9999;
+}
+
+.back:hover {
+    color: #ea1d53;
+}
+
+.back a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Helvetica', sans-serif
+}
+b,
+strong
+{
+    font-weight: bold;
+}
+i,
+em
+{
+    font-style: italic;
+}
+
+/*
+    ... and give links a nice look.
+*/
+a
+{
+    padding: 5px;
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover,
+a:focus
+{
+    border-bottom: 2px solid #FFF
+}
+
+/*
+    Because the main point behind the impress.js demo is to demo impress.js
+    we display a fallback message for users with browsers that don't support
+    all the features required by it.
+
+    All of the content will be still fully accessible for them, but I want
+    them to know that they are missing something - that's what the demo is
+    about, isn't it?
+
+    And then we hide the message, when support is detected in the browser.
+*/
+
+.fallback-message
+{
+    font-family: sans-serif;
+    line-height: 1.3;
+
+    width: 780px;
+    margin: 20px auto;
+    padding: 10px 10px 0;
+
+    border: 1px solid #e4c652;
+    border-radius: 10px;
+    background: #eedc94;
+}
+
+.fallback-message p
+{
+    margin-bottom: 10px;
+}
+
+.impress-supported .fallback-message
+{
+    display: none;
+}
+.step
+{
+    font-family: 'PT Serif', georgia, serif;
+    font-size: 48px;
+    line-height: 1.5;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 900px;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: rgba(0, 56, 90, .85);
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    text-shadow: 0 6px 4px black;
+}
+.impress-enabled .step
+{
+    margin: 0;
+    -webkit-transition: opacity 1s;
+       -moz-transition: opacity 1s;
+        -ms-transition: opacity 1s;
+         -o-transition: opacity 1s;
+            transition: opacity 1s;
+    opacity: .3;
+}
+
+.impress-enabled .step.active
+{
+    opacity: 1;
+}
+.slide
+{
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    display: block;
+    width: 900px;
+    height: 700px;
+    padding: 40px 60px;
+    letter-spacing: -1px;
+    opacity: 1;
+    color: white;
+    border-radius: 10px;
+    background-color: rgba(0, 56, 90, .85);
+    text-shadow: 0 6px 4px black;
+}
+
+.slide q
+{
+    font-size: 50px;
+    line-height: 72px;
+    display: block;
+    margin-top: 100px;
+}
+.slide q strong
+{
+    white-space: nowrap;
+}
+#title
+{
+    padding: 40px;
+}
+
+#title .try
+{
+    font-size: 64px;
+    position: absolute;
+    top: -3em;
+    left: 1.5em;
+    -webkit-transform: translateZ(20px);
+    -moz-transform: translateZ(20px);
+    -ms-transform: translateZ(20px);
+    -o-transform: translateZ(20px);
+    transform: translateZ(20px);
+    border-radius: 10px;
+    background-color: rgba(0, 56, 90, .85);
+    text-shadow: 0 3px 5px #020202;
+}
+#title h
+{
+    font-size: 190px;
+    -webkit-transform: translateZ(50px);
+       -moz-transform: translateZ(50px);
+        -ms-transform: translateZ(50px);
+         -o-transform: translateZ(50px);
+            transform: translateZ(50px);
+}
+h1{
+  font-size: 30px;
+  font-weight : bold;
+}
+h2{
+  font-size: 40px;
+  font-weight : bold;
+}
+#title .footnote
+{
+    font-size: 32px;
+}
+#big
+{
+    font-size: 20px;
+    line-height: 1;
+    z-index: 1;
+    width: 681px;
+    height: 518px;
+    text-align: center;
+    border-radius: 10px;
+}
+#big b
+{
+    font-size: 20px;
+    line-height: 250px;
+    display: block;
+}
+#big.thoughts
+{
+    font-size: 20px;
+    line-height: 150px;
+}
+#tiny
+{
+    width: 753px;
+    text-align: center;
+}
+#ing b
+{
+    display: inline-block;
+    -webkit-transition: .5s;
+       -moz-transition: .5s;
+        -ms-transition: .5s;
+         -o-transition: .5s;
+            transition: .5s;
+}
+#ing.present .positioning
+{
+    -webkit-transform: translateY(-10px);
+       -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+         -o-transform: translateY(-10px);
+            transform: translateY(-10px);
+}
+#ing.present .rotating
+{
+    -webkit-transition-delay: .25s;
+       -moz-transition-delay: .25s;
+        -ms-transition-delay: .25s;
+         -o-transition-delay: .25s;
+            transition-delay: .25s;
+    -webkit-transform: rotate(-10deg);
+       -moz-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+         -o-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+}
+#ing.present .scaling
+{
+    -webkit-transition-delay: .5s;
+       -moz-transition-delay: .5s;
+        -ms-transition-delay: .5s;
+         -o-transition-delay: .5s;
+            transition-delay: .5s;
+    -webkit-transform: scale(.7);
+       -moz-transform: scale(.7);
+        -ms-transform: scale(.7);
+         -o-transform: scale(.7);
+            transform: scale(.7);
+}
+#imagination
+{
+    font-size: 30px;
+    width: 805px;
+    border-radius: 10px;
+    background-color: rgba(0, 56, 90, .85);
+}
+
+#imagination .imagination
+{
+    font-size: 78px;
+}
+#source
+{
+    border-radius: 38px;
+    background-color: rgba(0, 56, 90, .85);
+    background-repeat: no-repeat;
+}
+
+#source q
+{
+    font-size: 60px;
+}
+#its-in-3d p
+{
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+         -o-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+#its-in-3d span,
+#its-in-3d b
+{
+    display: inline-block;
+
+    -webkit-transition: .5s;
+       -moz-transition: .5s;
+        -ms-transition: .5s;
+         -o-transition: .5s;
+            transition: .5s;
+    -webkit-transform: translateZ(40px);
+       -moz-transform: translateZ(40px);
+        -ms-transform: translateZ(40px);
+         -o-transform: translateZ(40px);
+            transform: translateZ(40px);
+}
+
+#its-in-3d .have
+{
+    -webkit-transform: translateZ(-40px);
+       -moz-transform: translateZ(-40px);
+        -ms-transform: translateZ(-40px);
+         -o-transform: translateZ(-40px);
+            transform: translateZ(-40px);
+}
+
+#its-in-3d .you
+{
+    -webkit-transform: translateZ(20px);
+       -moz-transform: translateZ(20px);
+        -ms-transform: translateZ(20px);
+         -o-transform: translateZ(20px);
+            transform: translateZ(20px);
+}
+
+#its-in-3d .noticed
+{
+    -webkit-transform: translateZ(-40px);
+       -moz-transform: translateZ(-40px);
+        -ms-transform: translateZ(-40px);
+         -o-transform: translateZ(-40px);
+            transform: translateZ(-40px);
+}
+
+#its-in-3d .its
+{
+    -webkit-transform: translateZ(60px);
+       -moz-transform: translateZ(60px);
+        -ms-transform: translateZ(60px);
+         -o-transform: translateZ(60px);
+            transform: translateZ(60px);
+}
+
+#its-in-3d .in
+{
+    -webkit-transform: translateZ(-10px);
+       -moz-transform: translateZ(-10px);
+        -ms-transform: translateZ(-10px);
+         -o-transform: translateZ(-10px);
+            transform: translateZ(-10px);
+}
+
+#its-in-3d .footnote
+{
+    font-size: 32px;
+
+    -webkit-transform: translateZ(-10px);
+       -moz-transform: translateZ(-10px);
+        -ms-transform: translateZ(-10px);
+         -o-transform: translateZ(-10px);
+            transform: translateZ(-10px);
+}
+
+#its-in-3d.present span,
+#its-in-3d.present b
+{
+    -webkit-transform: translateZ(0px);
+       -moz-transform: translateZ(0px);
+        -ms-transform: translateZ(0px);
+         -o-transform: translateZ(0px);
+            transform: translateZ(0px);
+}
+#overview
+{
+    display: none;
+}
+.impress-on-overview .step
+{
+    cursor: pointer;
+
+    opacity: 0;
+}
+.impress-enabled .hint
+{
+    display: block;
+}
+.impress-on-bored .hint
+{
+    -webkit-transition: opacity 1s 5s, -webkit-transform .5s 4.5s;
+       -moz-transition: opacity 1s 5s,    -moz-transform .5s 4.5s;
+        -ms-transition: opacity 1s 5s,     -ms-transform .5s 4.5s;
+         -o-transition: opacity 1s 5s,      -o-transform .5s 4.5s;
+            transition: opacity 1s 5s,         transform .5s 4.5s;
+    -webkit-transform: translateY(0px);
+       -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+         -o-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+}
+.impress-enabled
+{
+    color: white;
+}
+.impress-enabled #impress
+{
+    pointer-events: auto;
+}
+.retour {
+    text-align: center
+}
+.impress-on-bored .hint {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform:    translateY(0px);
+    -ms-transform:     translateY(0px);
+    -o-transform:      translateY(0px);
+    transform:         translateY(0px);
+    -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s 4.5s;
+    -moz-transition:    opacity 1s 5s,    -moz-transform 0.5s 4.5s;
+    -ms-transition:     opacity 1s 5s,     -ms-transform 0.5s 4.5s;
+    -o-transition:      opacity 1s 5s,      -o-transform 0.5s 4.5s;
+    transition:         opacity 1s 5s,         transform 0.5s 4.5s;
+}
+.impress-enabled .hint { display: block }
+.hint {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 200px;
+    background: rgba(0,0,0,0.5);
+    color: #EEE;
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+    z-index: 100;
+    opacity: 0;
+    -webkit-transform: translateY(400px);
+    -moz-transform:    translateY(400px);
+    -ms-transform:     translateY(400px);
+    -o-transform:      translateY(400px);
+    transform:         translateY(400px);
+    -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
+    -moz-transition:    opacity 1s,    -moz-transform 0.5s 1s;
+    -ms-transition:     opacity 1s,     -ms-transform 0.5s 1s;
+    -o-transition:      opacity 1s,      -o-transform 0.5s 1s;
+    transition:         opacity 1s,         transform 0.5s 1s;
+}
